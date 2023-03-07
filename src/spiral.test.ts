@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest"
 
-import { inWardSpiral_cw, inWardSpiral_ccw } from "./inward-spiral"
+import { inWardSpiral_cw, inWardSpiral_ccw } from "./spiral"
 
 describe("inWardSpiral_cw", () => {
     it.each([

@@ -1,1 +1,1 @@
-export * from "./inward-spiral"
+export * from "./spiral"
