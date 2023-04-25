@@ -1,0 +1,16 @@
+[tasks.build]
+description = "build all modules"
+category = "wasm"
+install_crate = { crate_name = "wasm-pack", binary = "wasm-pack", test_arg = "-V"  }
+command = "wasm-pack"
+args = ["build", "--target", "nodejs"]
+
+[tasks.test-package]
+description = "test wasm package"
+category = "wasm"
+dependencies = ["build"]
+script = '''
+cd tests
+npm install
+npm start
+'''
